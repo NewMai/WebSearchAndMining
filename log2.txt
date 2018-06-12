@@ -1,0 +1,2 @@
+Error: url = http://www.goodreads.com/shelf/users/32370.Dry?shelf=biographical  deep = 3
+<urlopen error ('_ssl.c:574: The handshake operation timed out',)>

@@ -1,0 +1,2 @@
+Error: url = https://www.qidian.com/charge/meRedirect  deep = 4
+('http error', 401, 'Unauthorized', <httplib.HTTPMessage instance at 0x7f5c13df2cb0>)
