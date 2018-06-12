@@ -187,6 +187,7 @@ class Scraper_QiDian:
         """
         # https://book.qidian.com/ajax/book/GetBookForum?_csrfToken=5EKKoKOZ5Vs2dlZyT9sPnMDLJiwOE8cW7t68UZ4k&authorId=4374001&bookId=3547179&chanId=1&pageSize=15
 
+        # Ref: https://blog.csdn.net/t8116189520/article/details/80319339
         turl = "%s_csrfToken=%s&authorId=%s&bookId=%s&chanId=1&pageSize=15" % (
             "https://book.qidian.com/ajax/book/GetBookForum?",
             str(self.cookie),

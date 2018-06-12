@@ -9,7 +9,7 @@ import glob
 import json
 from bs4 import BeautifulSoup as bs
 import urllib
-
+import loadSeeds
 
 # jsons_dir = 'JSONs' # address to save JSON files
 # jsons_dir = "NewJsons"
@@ -133,9 +133,6 @@ def generateSeeds2():
             line = line[:-2]
             seeds.append(line)
 
-
-
-
 def main(thread_cnt = 5, crawl_delay = 20, timeout=2):
     """
     crawler module.
@@ -149,7 +146,7 @@ def main(thread_cnt = 5, crawl_delay = 20, timeout=2):
                 crawling duration, after which crawling will be halted. In minutes
     """
     timeout = time.time() + timeout * 60
-    generateSeeds2()
+    # generateSeeds2()
     initializeFrontline()
     threads = []
     print 'creating threads'
@@ -181,4 +178,6 @@ if __name__ == '__main__':
     #     exit()
     # main(args.threads, args.delay, args.timeout)
     # main(1, 2, 10)
+    seedFile = "url3.txt"
+    seeds = loadSeeds.load(seedFile)
     main(5, 2, 100)
