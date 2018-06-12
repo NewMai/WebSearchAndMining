@@ -1,4 +1,4 @@
-GoodSearcher
+BookSearcher
 ============
 
 A pyLucene-based crawl and search module for searching books from goodreads.com
